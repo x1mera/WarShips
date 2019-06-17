@@ -1,0 +1,605 @@
+
+header {
+	min-height: 100vh;
+	background: url(images/Ships1.jpg); 
+	background-size: cover;
+}
+.wrappHead {
+	background-color: rgba(0,0,90,0.25);
+	min-height: 100vh;
+	box-shadow: inset 0 -3px 20px rgb(0,0,90);
+}
+.cont {
+	background-color: black;
+
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.cont p{
+	margin:0;
+	padding: 5px 0;
+	font-size: 16px;
+	color: rgba(10,10,250);
+}
+.cont p span {
+	position: absolute;
+	color: rgba(255,255,255,0.8);
+	right: 0;
+	font-size: 14px;
+}
+.cont p span a {
+	color: rgba(255,10,10,0.9);	
+	font-style: italic;
+	text-decoration: none;
+}
+.nav{
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	background-color: rgba(0,0,90,0.8);
+	box-shadow: 0 0 4px white;
+	transition: padding 250ms;
+}
+.nav.active ul li a{
+	padding: 0;
+}
+.nav ul {
+	display: flex;
+	margin-bottom: 0;
+}
+
+.nav ul li{
+	margin-bottom: 0;
+	flex:1;
+	list-style-type: none;
+	display: inline-block;
+}
+.nav ul li a{
+	padding: 7px 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	transition: padding 500ms;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover{
+	background: linear-gradient(to top, rgb(0,0,200), transparent) 
+}
+.posRel {
+	height: 100%;
+	position: relative;
+}
+h1, h2{
+	font-weight: bold;
+	text-align: center;
+}
+h1 {
+	position: absolute;
+	top: 50%;
+	width:100%;
+	transform: translateY(-100%);
+	color: rgba(0,0,0,0.8);
+	text-shadow: 0 0 20px rgba(0,98,255,0.7);
+	font-size: 8em;	
+}
+h2{
+	padding-top: 500px;
+	color: black;
+	font-size: 3em;
+	text-shadow: 0 0 8px rgba(255,255,255,1);
+}
+.posRel img {
+	position: absolute;
+	z-index: 0;
+	top:50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	max-width: 300px;
+}
+.posRel img.shturval{
+	max-width: 180px;
+	top:50px;
+	right:0;
+	animation: shtur 60s infinite linear;
+}
+.headerButton div{
+	text-align: center;
+}
+.headerButton a.button {
+	font-size: 1.8em;
+	color: red;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	border: 2px solid rgba(0,0,90,0.8);
+	box-shadow: inset 0 0 2px white;
+	background-color: rgba(0,0,150,0.3); 
+	height: 50px;
+	line-height: 50px;
+	width: 280px;
+	transition: box-shadow, font-size, 100ms;
+}
+.headerButton a.button:hover {
+	box-shadow: inset 0 0 4px white; 
+}
+.headerButton a.button:active {
+	font-size: 1.3em;
+	box-shadow: inset 0 0 15px 4px rgba(0,0,0,0.8); 
+}
+
+.wrappVisitor {
+	min-height: 100vh;
+	background: url(images/fon.jpg);
+	background-size: cover;
+}
+.wrappVisInn{
+	background-color: rgba(0,0,50,0.85);
+	min-height: 100vh;
+	padding-bottom: 20px;
+}
+.Visitor .columns {
+	position: relative;
+}
+
+.Visitor h3, .Visitor h4{
+	color: rgba(255,255,255,0.85);
+	text-align: center;
+}
+.Visitor h3 {
+	color: rgba(255,255,255);
+	padding-top : 70px;
+}
+.text {
+	border-radius: 7px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 18px;
+	background-color: rgba(0,20,50,0.96);
+	padding: 20px 10px;
+	box-shadow: inset 0 0 5px 0.5px rgba(255,10,10,0.7);
+	color: rgba(255,255,255,0.85);
+	transform: scale(0);
+	opacity: 0;
+	text-indent: 25px;
+	transition: transform 500ms, opacity 850ms;
+}
+.columns:hover .text {
+	transform: scale(1);
+	opacity: 1;
+}
+.new {
+	box-shadow: inset 0px 0px 30px 4px rgba(0,0,20,0.85),0 0 7px 1px rgba(255,255,255,0.7);
+	background-size: cover;
+	margin-top: 0;
+	border-radius: 7px 7px 0 0;
+}
+.new1{
+	background-image: url(images/new1.jpg);
+	background-position: 35%;
+}
+.new2{
+	background-image: url(images/new4.jpg);
+	background-position: -20px;
+}
+.new3{
+	background-image: url(images/new5.jpg);
+	background-position: 52%;
+}
+figcaption {
+	background-color: rgba(0,0,20);
+	height: 150px;
+	border-radius: 0 0 7px 7px;
+}
+figcaption p{
+	color: rgba(255,255,255,0.85);
+	font-size: 1.3em;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+
+
+/** -----СЛАЙДЕР---- **/
+.owl-carousel1 {
+	max-width: 1000px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+.owl-carousel1 .owl-stage-outer {
+	box-shadow: 0 0 5px white;
+}
+.owl-carousel1 .owl-dots{
+ text-align: center;
+}
+.owl-carousel1 .owl-dots button span{
+	display: inline-block;
+	width: 40px;
+	height: 15px;
+	border-radius: 4px;
+	margin: 4px;
+	background-color: red;
+}
+.owl-carousel1 .owl-dots button span{
+	display: inline-block;
+	width: 40px;
+	height: 15px;
+	border-radius: 4px;
+	margin: 4px;
+	background-color: rgba(200,0,0,0.5);
+	transition: background-color;
+}
+.owl-carousel1 .owl-dots button span{
+	display: inline-block;
+	width: 40px;
+	height: 15px;
+	border-radius: 4px;
+	margin: 4px;
+	background-color: rgba(200,0,0,0.5);
+	transition: background-color 0.5s;
+}
+.owl-carousel1 .owl-dots button.active span{
+	background-color: rgba(200,0,0,0.8);
+}
+.owl-carousel1 p{
+    padding: 7px;
+    text-shadow: 0 0 5px rgba(0, 0, 100, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(200,0,0,0.8);
+}
+.owl-carousel1 .owl-nav button.owl-prev,
+.owl-carousel1 .owl-nav button.owl-next{
+	padding: 2px!important;
+	color:red;
+	font-size: 1.3em;
+	background-color: rgba(255,255,255,0.6);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: font-size 200ms;
+}
+.owl-carousel1 .owl-nav button.owl-prev:hover,
+.owl-carousel1 .owl-nav button.owl-next:hover{
+	font-size: 1.5em;
+}
+.owl-carousel1 .owl-prev{
+	border-radius: 0 8px 8px 0;
+}
+.owl-carousel1 .owl-next{
+	border-radius: 8px 0 0 8px;
+	right:0;
+}
+/** ----- КОНЕЦ СЛАЙДЕР---- **/
+
+
+
+.wrappNews {
+	min-height: 100vh;
+	background: url(images/fon2.jpg);
+	background-size: cover
+}
+.wrappNewsInn{
+	background-color: rgba(0,0,50,0.85);
+	min-height: 100vh;
+}
+.wrappNewsInn h3{
+    padding-top: 70px;
+    text-align: center;
+    color: rgba(255,255,255);
+}
+
+.lp-tabs {
+    max-width: 1200px;
+    margin: auto;
+}
+.lp-tabs ul.navTab{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+.lp-tabs ul.navTab li{
+    color: cornsilk;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: background-color 200ms;
+}
+.lp-tabs ul.navTab li:nth-child(1){
+    border-top: blue solid 1px;
+    border-left: blue solid 1px;
+    border-radius: 5px 0 0 0;
+}
+.lp-tabs ul.navTab li:nth-child(2){
+    border-top: blue solid 1px;
+}
+.lp-tabs ul.navTab li:nth-child(3){
+    border-top: blue solid 1px;
+    border-right: blue solid 1px;
+    border-radius: 0 5px 0 0;
+}
+.lp-tabs ul.navTab li.active,
+.lp-tabs ul.navTab li:hover{
+    background-color: rgba(0,0,250,0.6);
+}
+.tab2 ul{
+    padding-left: 15px;
+    list-style-type: disc;
+}
+.tabs{
+    background-color: rgba(0,0,100,0.5);
+    border: solid 1px blue;
+    border-radius: 5px;
+    position: relative;
+    color: aliceblue;
+}
+.tab{
+    padding: 10px;
+    position: absolute;
+    display: none;
+    font-size: 18px
+}
+.tab p:last-of-type{
+    margin-bottom: 0;
+}
+.tab.active{
+    display: block;
+}
+
+
+
+
+
+
+.wrappGaller {
+	min-height: 100vh;
+	background: url(images/fon4.jpg);
+	background-size: cover;
+    background-position: center;
+}
+.wrappGallerInn {
+    min-height: 100vh;
+    background-color: rgba(20,20,50,0.8);
+    box-shadow: inset 0 0 10px black; 
+}
+.wrappGallerInn h3{
+    padding-top: 70px;
+    text-align: center;
+    color: rgba(255,255,255);
+}
+
+.owl-carousel2 img{
+    max-width: 200px;
+}
+.owl-carousel2{
+    box-shadow: 0 0 5px red;
+    margin-bottom: 15px;
+}
+.gallImg {
+    max-width: 90%;
+    height: 520px;
+    margin: auto;
+    position: relative;
+}
+.gallImg img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    box-shadow: 0 0 5px white;
+}
+.owl-carousel2 .owl-nav button.owl-prev,
+.owl-carousel2 .owl-nav button.owl-next{
+	padding: 2px!important;
+	color:red;
+	font-size: 1.3em;
+	background-color: rgba(255,255,255,0.6);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: font-size 200ms;
+}
+.owl-carousel2 .owl-nav button.owl-prev:hover,
+.owl-carousel2 .owl-nav button.owl-next:hover{
+	font-size: 1.5em;
+}
+.owl-carousel2 .owl-prev{
+	border-radius: 0 8px 8px 0;
+}
+.owl-carousel2 .owl-next{
+	border-radius: 8px 0 0 8px;
+	right:0;
+}
+
+
+
+
+.wrappCont {
+	min-height: 100vh;
+	background: url(images/ship2.jpg);
+	background-size: cover;
+    background-position: center;
+}
+.wrappContInn {
+    min-height: 100vh;
+    background-color: rgba(40,20,50,0.8);
+    box-shadow: inset 0 0 10px black; 
+}
+.wrappContInn h3{
+    padding-top: 70px;
+    text-align: center;
+    color: rgba(255,255,255);
+}
+
+.wrappContInn h4{
+    text-align: center;
+    color: aliceblue;
+}
+#lp-map {
+    height: 400px;
+}
+@keyframes shtur {
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+#popup3 .wi-fb-title h2{
+    color: blue;
+}
+.wi-fb.wi-fb-theme .wi-fb-btn button {
+    background-color: blue;
+}
+
+    border-bottom: 1px solid rgba(49, 14, 163, 0.8);
+}
+.wi-fb.wi-fb-theme .wi-fb-btn button{
+    border-radius: 6px;    
+}
+.wi-fb-977561 .wi-fb-btn button{
+    background: rgba(92, 43, 226, 0.7);
+}
+
+@media (min-width: 320px){
+.cont p{
+	font-size: 14px;
+    }
+.cont p span {
+	font-size: 12px;
+    }
+.nav ul li a{
+	font-size: 10px;
+    }
+h1 {
+	top: 25%;
+	left: 0;
+    right: 0;
+	font-size: 30px;	
+}
+.posRel img {
+	top:25%;
+	max-width: 200px;
+}
+h2{
+	padding-top: 220px;
+	font-size: 20px;
+}
+.posRel img.shturval{
+    display: none;
+}
+.headerButton a.button {
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	width: 220px;
+}
+.headerButton a.button:active {
+	font-size: 1.1em;
+}    
+.Visitor h3, .wrappNewsInn h3,.wrappGallerInn h3{
+    font-size: 22px;
+}
+.owl-carousel1 p{
+    font-size: 18px;
+}   
+.Visitor .columns {
+margin-bottom: 10px;
+}
+.lp-tabs ul.navTab li{
+    font-size: 12px;
+}
+    .lp-tabs p, .lp-tabs li{
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 549px){
+    
+    .cont p{
+	font-size: 16px;
+    }
+.cont p span {
+	font-size: 14px;
+    }
+.nav ul li a{
+	font-size: 14px;
+    }
+h1 {
+	top: 40%;
+	left: 0;
+    right: 0;
+	font-size: 55px;	
+}
+.posRel img {
+	top:40%;
+	max-width: 300px;
+}
+h2{
+	padding-top: 400px;
+	font-size: 35px;
+}
+.headerButton a.button {
+	font-size: 1.2em;
+	width: 230px;
+}
+.headerButton a.button:active {
+	font-size: 1.1em;
+}    
+.Visitor h3, .wrappNewsInn h3,.wrappGallerInn h3{
+    font-size: 26px;
+}
+.owl-carousel1 p{
+    font-size: 20px;
+}   
+.Visitor .columns {
+margin-bottom: 10px;
+}
+.lp-tabs ul.navTab li{
+    font-size: 18px;
+}
+    .lp-tabs p, .lp-tabs li{
+        font-size: 18px;
+    }
+    figcaption p{
+	font-size: 1.1em;
+}
+    .text {
+	font-size: 13px;
+}
+    
+}
+@media (min-width: 750px){
+        figcaption p{
+	font-size: 1.3em;
+}
+    .text {
+	font-size: 18px;
+}
+    .owl-carousel1 p{
+    font-size: 45px;
+} 
+}
